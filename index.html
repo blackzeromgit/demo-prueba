@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Página ejemplo responsive design">
+	<title>Responsive Design</title>
+	<!-- Favicons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="dist/assets/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/assets/css/fixed.min.css">
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+	<!--- Start Home Section -->
+	<div id="home">
+		<!--- Navigation -->
+		<nav class="navbar navbar-expand-md fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="dist/assets/img/logo.png" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#home"><i class="fa fa-fw fa-home"></i> Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#demo1"><i class="fa fa-globe"></i> Demo 1</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#demo2"><i class="fa fa-globe"></i> Demo 2</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact"><i class="fa fa-fw fa-envelope"></i> Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</nav>
+		<!--- End Navigation -->
+
+		<!--- Start Landing Page Images -->
+		<div class="landing">
+			<div class="home-wrap">
+				<div class="home-inner">
+				</div>
+			</div>
+		</div>
+		<!--- End Landing Page Images -->
+
+		<!--- Start Landing Page Caption -->
+		<div class="caption center-block text-center">
+			<h3>Bienvenid@</h3>
+			<a class="btn btn-outline-light" href="#demo1">Comenzar</a>
+		</div>
+		<!--- End Landing Page Caption -->
+
+	</div>
+	<!--- End Home Section -->
+
+	<!--- Start demo1 Section -->
+	<div id="demo1" class="offset">
+
+		<!--- Start Jumbotron -->
+		<div class="jumbotron">
+
+			<h3 class="heading">Demo 1</h3>
+			<div class="heading-underline"></div>
+
+			<div class="row narrow">
+
+				<div class="col-md-4">
+					<div class="demo1 text-center">
+						<i class="fas fa-compass fa-3x"></i>
+						<h3>Título 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="demo1 text-center">
+						<i class="fas fa-briefcase fa-3x"></i>
+						<h3>Título 2</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="demo1 text-center">
+						<i class="fas fa-desktop fa-3x"></i>
+						<h3>Título 3</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					</div>
+				</div>
+
+			</div> <!--- End Row -->
+		</div><!--- End Jumbotron -->
+
+	</div>
+	<!--- End demo1 Section -->
+
+	<!--- Start demo2 Section -->
+	<div id="demo2" class="offset">
+
+		<div class="jumbotron">
+
+			<h3 class="heading">Demo 2</h3>
+			<div class="heading-underline"></div>
+
+			<div class="row narrow">
+
+				<div class="col-md-6">
+					<div class="card text-center">
+						<img class="card-img-top" src="dist/assets/img/demo2/1.jpg" alt="">
+						<div class="card-body">
+							<h4>Texto 1</h4>
+							<h5>Texto 2</h5>
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="card text-center">
+						<img class="card-img-top" src="dist/assets/img/demo2/2.jpg" alt="">
+						<div class="card-body">
+							<h4>Texto 1</h4>
+							<h5>Texto 2</h5>
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+						</div>
+					</div>
+				</div>
+
+			</div> <!--- End Row -->
+		</div> <!--- End Jumbotron -->
+
+	</div>
+	<!--- End demo2 Section -->
+
+	<!--- Start Contact Section -->
+	<div id="contact" class="offset">
+
+		<div class="container-fluid footer">
+			<div class="row">
+
+				<!--- Start location -->
+				<div class="col-md-5">
+					<br>
+					<strong>Ubicación</strong>
+					<p>Pg. Marítimo, 123<br>Barcelona, 08005</p>
+					<p>933334455<br>nombre@dominio.com</p>
+					<strong>Síguenos</strong><br>
+					<a href="#"><i class="fab fa-twitter-square"></i></a>
+					<a href="#"><i class="fab fa-facebook-square"></i></a>
+					<a href="#"><i class="fab fa-youtube-square"></i></a>
+				</div> <!--- End location -->
+
+				<!--- Start Contact Form-->
+				<div class="col-md-7">
+					<h3>Contacto</h3>
+					<form id="contact-form" method="post" action="#">
+
+						<div class="messages"></div>
+						<div class="controls">
+							<div class="form-group">
+								<input id="form_name" type="text" name="name" class="form-control" placeholder="Nombre" required="required">
+							</div>
+
+							<div class="form-group">
+								<input id="form_middlename" type="text" name="middlename" class="form-control" placeholder="Primer apellido" required="required">
+							</div>
+
+							<div class="form-group">
+								<input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required">
+							</div>
+
+							<div class="form-group">
+								<textarea id="form_message" name="message" class="form-control" placeholder="Mensaje" rows="3" required="required"></textarea>
+							</div>
+
+							<input type="submit" class="btn btn-outline-light" value="Enviar">
+						</div>
+
+					</form>
+				</div> <!--- End Contact Form -->
+
+			</div> <!--- End Row -->
+		</div> <!--- End Container Footer -->
+
+	</div>
+	<!--- End Contact Section -->
+
+	<!--- Scripts -->
+	<script src="dist/assets/js/vendor/jquery.min.js"></script>
+	<script src="dist/assets/js/vendor/bootstrap.bundle.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+	<script src="dist/assets/js/custom.min.js"></script>
+	<script src="dist/assets/js/validator.min.js"></script>
+	<script src="dist/assets/js/contact.min.js"></script>
+</body>
+</html>

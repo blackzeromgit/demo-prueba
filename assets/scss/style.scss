@@ -1,0 +1,251 @@
+// Bootstrap and its default variables
+@import "bootstrap/bootstrap";
+
+//colors
+$body_color: #505962;
+$color_dodger_blue_approx: #00b3ff;
+$color_deep_blue_90_approx: rgba(29, 1, 124, .9);
+$white: white;
+$color_cerulean_approx: #00b3fe;
+$black_10: rgba(0, 0, 0, 0.1);
+$color_deep_blue_85_approx: rgba(29, 1, 124, .85);
+$magenta_fuchsia: #ff00ff;
+$black: black;
+$color_bombay_approx: #b2b5b8;
+
+//fonts
+$font_princinpal: arial;
+$font_secondary: sans-serif;
+
+//urls
+$url_img_landing: url('../img/landing.jpeg');
+
+body {
+	overflow-x: hidden;
+	font-family: $font_princinpal, $font_secondary;
+	color: $body_color;
+}
+
+.offset:before {
+	height: 62px;
+	margin-top: -62px;
+	content: "";
+	display: block;
+}
+
+[class*="col-"] {
+	padding: 1rem;
+}
+
+.heading-underline {
+	width: 3rem;
+	height: .2rem;
+	background-color: $color_dodger_blue_approx;
+	margin: 0 auto 2rem;
+}
+
+.navbar {
+	padding: .6rem 1rem;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	background-color: $color_deep_blue_90_approx!important;
+}
+
+.navbar-brand img {
+	height: 2rem;
+}
+
+.navbar-nav {
+	.nav-link {
+		color: $white;
+		padding-top: .8rem;
+		&.active {
+			color: $color_cerulean_approx;
+		}
+		&:hover {
+			color: $color_cerulean_approx;
+		}
+	}
+	li {
+		padding-right: .8rem;
+	}
+}
+
+.svg-inline--fa.fa-w-14 {
+	color: $white;
+	font-size: 1.6rem;
+}
+
+/*========= LANDING PAGE ============*/
+
+.home-inner {
+	background: $url_img_landing no-repeat;
+	background-image: $url_img_landing;
+}
+
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 40%;
+	z-index: 1;
+	h3 {
+		color: $white;
+		font-size: 2.4rem;
+		text-transform: uppercase;
+		padding-bottom: 2rem;
+	}
+}
+
+.btn {
+	border-width: thin;
+	border-radius: 2;
+	padding: .5rem 1.1rem;
+	font-size: .9rem;
+	text-transform: uppercase;
+}
+
+/*============= DEMO1 SECTION =============*/
+
+.jumbotron {
+	margin-bottom: 0;
+	border-radius: 0;
+	padding: 3rem 0;
+}
+
+.narrow {
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 1rem;
+}
+
+.demo1 {
+	h3 {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		padding-bottom: .4rem;
+	}
+	p {
+		font-size: 1.1rem;
+	}
+	svg.svg-inline--fa {
+		color: $color_dodger_blue_approx;
+		margin: 1rem auto;
+	}
+}
+
+h3.heading {
+	font-size: 1.9rem;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 1.9rem;
+}
+
+/*============= DEMO2 SECTION =============*/
+
+.card {
+	margin: 0 1rem;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 0;
+	h4 {
+		font-weight: 700;
+	}
+	h5 {
+		color: $color_dodger_blue_approx;
+	}
+	p {
+		border-top: 1px solid $black_10;
+		padding: 1rem;
+		margin: 1rem 0 1.5rem;
+	}
+}
+
+.card-img-top {
+	border-radius: 0;
+}
+
+/*============= CONTACT SECTION =============*/
+
+.footer {
+	.row {
+		background-color: $color_deep_blue_85_approx!important;
+		padding: 1rem 2rem 2rem;
+		color: $white;
+	}
+	a {
+		color: $white;
+	}
+	h3 {
+		text-transform: uppercase;
+		margin: 1.5rem 0;
+	}
+	svg.svg-inline--fa {
+		margin: 1.2rem .5rem 0 0;
+		&:hover {
+			color: $color_dodger_blue_approx!important;
+		}
+	}
+}
+
+/*============= CONTACT FORM =============*/
+
+.form-group {
+	margin-bottom: 1.3rem;
+	input::placeholder {
+		color: $color_bombay_approx!important;
+	}
+	textarea::placeholder {
+		color: $color_bombay_approx!important;
+	}
+}
+
+.form-control {
+	background: $white;
+	border-radius: 5px;
+	border: .15rem solid $magenta_fuchsia;
+	color: $black!important;
+	&:focus {
+		background: $white;
+		border: .15rem solid $magenta_fuchsia;
+	}
+}
+
+input.btn {
+	cursor: pointer;
+}
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Medium (md) devices (tablets, 768px and under) */
+@media(max-width: 768px) {
+	.caption {
+		top: 35%;
+		h3 {
+			font-size: 1.8rem;
+			padding-bottom: 1.2rem;
+		}
+	}
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }color: white;
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
